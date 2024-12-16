@@ -1,0 +1,15 @@
+D:\BTVN_SV\KTTAILop\KTTAILop\obj\Debug\KTTAILop.csproj.AssemblyReference.cache
+D:\BTVN_SV\KTTAILop\KTTAILop\obj\Debug\KTTAILop.Properties.Resources.resources
+D:\BTVN_SV\KTTAILop\KTTAILop\obj\Debug\KTTAILop.csproj.GenerateResource.cache
+D:\BTVN_SV\KTTAILop\KTTAILop\obj\Debug\KTTAILop.csproj.CoreCompileInputs.cache
+D:\BTVN_SV\KTTAILop\KTTAILop\bin\Debug\KTTAILop.exe.config
+D:\BTVN_SV\KTTAILop\KTTAILop\bin\Debug\KTTAILop.exe
+D:\BTVN_SV\KTTAILop\KTTAILop\bin\Debug\KTTAILop.pdb
+D:\BTVN_SV\KTTAILop\KTTAILop\bin\Debug\EntityFramework.dll
+D:\BTVN_SV\KTTAILop\KTTAILop\bin\Debug\EntityFramework.SqlServer.dll
+D:\BTVN_SV\KTTAILop\KTTAILop\bin\Debug\EntityFramework.xml
+D:\BTVN_SV\KTTAILop\KTTAILop\bin\Debug\EntityFramework.SqlServer.xml
+D:\BTVN_SV\KTTAILop\KTTAILop\obj\Debug\KTTAILop.csproj.Up2Date
+D:\BTVN_SV\KTTAILop\KTTAILop\obj\Debug\KTTAILop.exe
+D:\BTVN_SV\KTTAILop\KTTAILop\obj\Debug\KTTAILop.pdb
+D:\BTVN_SV\KTTAILop\KTTAILop\obj\Debug\KT_16_12.frm_sinhvien.resources
