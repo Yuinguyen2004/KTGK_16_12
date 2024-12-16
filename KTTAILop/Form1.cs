@@ -17,6 +17,7 @@ namespace KT_16_12
     {
         private QuanlySV _dbContest;
         private SinhVien student = null;
+        private bool isDataAdded = false;
         public frm_sinhvien()
         {
             InitializeComponent();
@@ -96,7 +97,12 @@ namespace KT_16_12
             var tempList = new List<SinhVien> { student };
             dtgv_sinhvien.DataSource = tempList;
 
-            MessageBox.Show("Thông tin sinh viên đã được thêm vào danh sách tạm thời.");
+            isDataAdded = true;
+
+            btn_luu.Visible = true;
+            btn_kluu.Visible = true;
+
+            MessageBox.Show("Thông tin sinh viên đã được thêm vào bộ nhớ tạm.");
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -110,6 +116,9 @@ namespace KT_16_12
         {
             loaddata();
             LoadMaSV();
+            btn_kluu.Visible = false;
+            btn_luu.Visible = false;
+
         }
 
         private void btn_xoa_Click(object sender, EventArgs e)
@@ -235,17 +244,24 @@ namespace KT_16_12
         {
             if (student == null)
             {
-                MessageBox.Show("Chưa có thông tin sinh viên để lưu.");
+                MessageBox.Show("Không có dữ liệu để lưu.");
                 return;
             }
 
             try
             {
                 _dbContest.SinhViens.Add(student);
+
                 _dbContest.SaveChanges();
 
                 MessageBox.Show("Dữ liệu đã được lưu thành công!");
+
                 student = null;
+                isDataAdded = false;
+
+                btn_luu.Visible = false;
+                btn_kluu.Visible = false;
+
                 loaddata();
             }
             catch (Exception ex)
@@ -278,6 +294,8 @@ namespace KT_16_12
 
                 MessageBox.Show("Dữ liệu đã bị hủy và không được lưu.");
                 loaddata();
+                btn_luu.Visible = false;
+                btn_kluu.Visible = false;
             }
         }
 
